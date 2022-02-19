@@ -1,0 +1,6 @@
+Django~=3.2.5
+pip~=22.0.3
+cryptography~=36.0.1
+utils~=1.0.1
+setuptools~=56.0.0
+django-debug-toolbar~=3.2.4
