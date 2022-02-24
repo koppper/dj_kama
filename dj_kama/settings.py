@@ -45,7 +45,7 @@ INSTALLED_APPS = [
 
 
     # JWT authentication backend library
-    'rest_framework_simplejwt',
+    # 'rest_framework_simplejwt',
 
 
     'news.apps.NewsConfig',

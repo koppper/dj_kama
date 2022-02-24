@@ -8,7 +8,7 @@ from .forms import NewsForm
 
 class HomeNews(ListView):
     model = News
-    template_name = 'news/home_list_name.html'
+    template_name = 'news/home_news_list.html'
     context_object_name = 'news'
     # queryset = News.objects.select_related('category')
 
@@ -23,7 +23,7 @@ class HomeNews(ListView):
 
 class NewsByCategory(ListView):
     model = News
-    template_name = 'news/home_list_name.html'
+    template_name = 'news/home_news_list.html'
     context_object_name = 'news'
     allow_empty = False
 
