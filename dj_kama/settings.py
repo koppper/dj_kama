@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     "debug_toolbar",
     'ckeditor',
     'ckeditor_uploader',
-
+    'captcha',
 
     # JWT authentication backend library
     # 'rest_framework_simplejwt',
