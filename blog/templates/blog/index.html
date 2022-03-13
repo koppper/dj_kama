@@ -1,17 +1,29 @@
-{% extends 'base.html' %}
-
-{% block sidebar %}
-{% include 'inc/_sidebar.html' %}
-{% endblock %}
-
+{% extends 'base_blog.html' %}
+{% load static %}
 {% block content %}
-
-    <div class="card" style="width: 18rem;">
-
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
+<section class="bg-text-area">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="bg-text">
+                <h3>Статьи</h3>
+                <p>{% for i in obj %}
+                    <p>{{ i.title }}</p>
+                    <p>{{ author }}</p>
+                    <p>{{ content }}</p>
+                    <p>{{ photo }}</p>
+                    <p>{{ created_at }}</p>
+                    <p>{{ views }}</p>
+                    <p>{{ category }}</p>
+                    <p>{{ tags }}</p>
+                    {% endfor %}
+                </p>
+            </div>
+        </div>
     </div>
-
+</div>
+</section>
+<section class="blog-post-area">
+</section>
 {% endblock %}
+
